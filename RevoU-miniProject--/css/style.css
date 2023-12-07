@@ -5,17 +5,76 @@ body {
 }
 
 
+#box {
+    margin-top: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E5DADA;
+    border: 5px solid #2E3039;    
+}
 
-.navbar {
-    background-color: Blue;
+
+.li{
+    list-style-type: none;
+   
+}
+.ul{
+    padding: 10px;
+    margin: 20px;
+   
+}
+
+
+
+.ul-keliling{
+    padding: 10px;
+    margin: 20px;
+}
+.li-keliling{
+    list-style-type: none;
+
+}
+.ul-luas{
+    padding: 10px;
+    margin: 20px;
+}
+
+.li-luas{
+    list-style-type: none;
+}
+
+p h1 {
+    color: #191B25;
+}
+
+
+
+.navigation> a{
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.gambar {
-    height: 200px;
-    width: 200px;
+.judul-LK-LS {
+    width: 1000px;
+    background-color: #776969;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.welcome {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#gambar {
+    height: 250px;
+    width: 375px;
     padding-top: 20px;
     display: block; 
     margin:auto;
@@ -33,7 +92,7 @@ body {
 }
 
 .rumusdua {
-    font-size: 35px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -48,6 +107,97 @@ body {
 }
 
 .input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding-right: 900px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+   
+}
+
+.input:focus {
+    border: 1px solid red;
+}
+
+
+.input-luas-section {
+    margin-top: 20px;
+    padding-left: 20px;
+
+}
+
+.kelas-tinggi {
+    margin-left: 20px;
+    
+}
+
+.kelas-alas {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.button-hitung {
+    margin: 90px;
+    gap: 10px;
+}
+
+
+.input-LK {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding-right: 900px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    border-color: 1px solid blueviolet;
+}
+
+.input-LK:focus {
+    border: 1px solid red;
+}
+
+
+
+.inputt-luas {
     margin-left: 10px;
-    margin-top: 10px;
+}
+
+button {
+    background-color: #111218;
+    color: wheat;
+    padding: 10px 20px;
+    border-radius: 10px ;
+    border: none;
+    cursor: pointer;
+   
+}
+
+button:hover {
+    background-color: #4C4F57;    
+    transition: all .2s ease-in-out;
+    
+}
+ 
+button:active {
+    background-color: #666C8F;
+    transform: translateY(10px);
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 992px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+    
 }

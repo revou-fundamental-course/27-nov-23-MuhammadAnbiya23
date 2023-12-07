@@ -3,43 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bismillah Web</title>
+    <title>Kalkulator Segitiga</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div>
-        <div class="navbar">
-            <h1>Keliling Segitiga</h1>
-        </div>
-    </div>
-    <div>
-        <img class="gambar" src="segitiga.png">
-        <p class="tulisan">Rumus Keliling Segitia : </p>
-        <p class="rumus">K = S1 + S2 + S3</p>
-        <p class="tulisan">Di Mana 
-            <br> K = Keliling 
-            <br> S1 = Sisi A 
-            <br> S2 = Sisi B 
-            <br> S3 = Sisi C</p>
-    <hr>
-    <p class="rumusdua" >Hitung Keliling Segitiga</p>
-    <!-- <section class="input-luas-section">
-        <label  for="input-tinggi" id="label-tinggi">Tinggi</label>
-        <input class="kelas-tinggi" type="number" id="input-tinggi" class="katik-input">
-        <br>
-        <label  for="input-alas" id="label-alas">Alas</label>
-        <input class="kelas-alas" type="number" id="input-alas" class="katik-input">
-    </section> -->
-    <input class="input" type="number">
-    <br>
-    <input class="input" type="number">
-    <br>
-    <input class="input" type="number">
-    
-    </div>
 
-    <div class="parent">
-    <button class="button" type="button">Hitung</button>
-    </div>
+<body>
+    <h1 class="welcome">Welcome To Katik</h1>
+    <p class="welcome">Hai Sobat! Selamat datang di katik :)</p>
+    <p class="welcome">Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling dari sebuah segitiga</p>
+    <br>
+    <nav class="navigation">
+        <a href="#keliling">Klik ini untuk Keliling Segitiga</a>
+        <a href="#luas">Klik ini untuk Luas Segitiga</a>
+    </nav>
+    
+    <div id="box">
+        <div>
+            <div class="judul-LK-LS">
+                <h1 id="keliling">Keliling Segitiga</h1>
+            </div>
+        <div>
+        <img id="gambar" src="./assets/keliling-segitiga.jpg">
+        <p class="tulisan">Rumus Keliling Segitiga : </p>
+        <p class="rumus">K = S1 + S2 + S3</p>
+
+        <ul class="ul-keliling">
+            <li class="li-keliling"> Keterangan :</li>
+            <li class="li-keliling"> K = Keliling</li>
+            <li class="li-keliling"> S1 = Sisi A</li>
+            <li class="li-keliling"> S2 = Sisi B</li>
+            <li class="li-keliling"> S3 = Sisi C</li>
+        </ul>    
+
+    
+        <p class="rumusdua" >Menghitung Keliling Segitiga</p>
+
+        <ul class="ul">
+            <li class="li">Sisi Pertama: </li>
+            <input type="text" id="input-s1" placeholder="Masukan sisi pertama">
+            <li class="li">Sisi Kedua: </li>
+            <input type="text" id="input-s2" placeholder="Masukkan sisi kedua">
+            <li class="li">Sisi Ketiga: </li>
+            <input type="text" id="input-s3" placeholder="Masukkan sisi ketiga">
+
+           
+        </ul>
+
+
+        <button id="buttom-hitung">Hitung</button>
+        <button id="button-reset">Reset</button>
+
+       
+
+        <div id="buttom-output"></div>
+        <br>
+
+        <div class="judul-LK-LS">
+            <h1 id="luas">Luas Segitiga</h1>
+        </div>
+
+        <img id="gambar" src="./assets/luas-segitiga.png">
+
+        <ul class="ul-luas">
+            <li class="li-luas">Alas: </li>
+            <input type="text" id="input-alas" placeholder="Masukan alas">
+            <li class="li-luas">Tinggi: </li>
+            <input type="text" id="input-tinggi" placeholder="Masukkan tinggi">
+        
+        </ul>
+
+            <button id="hitung-button">Hitung Luas</button>
+            <button id="reset-button">Reset</button>
+
+        <div id="output"></div>
+    </div>    
+
+    <script class="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

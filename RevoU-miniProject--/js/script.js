@@ -36,27 +36,26 @@
     // Sekarang Luas
 
     const alasInput = document.getElementById('input-alas');
-        const tinggiInput = document.getElementById('input-tinggi');
-        const hitungButton = document.getElementById('button-hitung');
-        const resetButton = document.getElementById('button-reset');
-        const outputDiv = document.getElementById('output');
+    const tinggiInput = document.getElementById('input-tinggi');
+    const hitungButton = document.getElementById('hitung-button');
+    const resetButton = document.getElementById('reset-button');
+    const outputDiv = document.getElementById('output');
 
-        hitungButton.addEventListener('click', function(){
-            let alas = parseFloat(alasInput.value);
-            let tinggi = parseFloat(tinggiInput.value);
+    hitungButton.addEventListener('click', function(){
+        let alas = parseFloat(alasInput.value);
+        let tinggi = parseFloat(tinggiInput.value);
 
-            if (isNaN(alas) || isNaN(tinggi)) {
-                outputDiv.innerHTML = 'Masukkan angka valid untuk alas dan tinggi segitiga.';
-            } else {
-                let luas = 0.5 * alas * tinggi;
-                outputDiv.innerHTML = `Luas segitiga: ${luas.toFixed(2)}`;
-            }
-        });
+    if (isNaN(alas) || isNaN(tinggi)) {
+        outputDiv.innerHTML = 'Masukkan angka valid untuk alas dan tinggi segitiga.';
+    } else {
+        let luas = 0.5 * alas * tinggi;
+        outputDiv.innerHTML = `Luas segitiga: ${luas.toFixed(2)}`;
+    }
+});
 
-        resetButton.addEventListener('click', function(){
-            alasInput.value = '';
-            tinggiInput.value = '';
-            outputDiv.innerHTML = '';
-        });
-
+    resetButton.addEventListener('click', function(){
+        alasInput.value = '';
+        tinggiInput.value = '';
+        outputDiv.innerHTML = ''; 
+});
     
