@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <h1 class="welcome">Welcome To Katik</h1>
+    <p class="welcome">Hai Sobat! Selamat datang di katik :)</p>
+    <p class="welcome">Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling dari sebuah segitiga</p>
+    <br>
+    <nav class="navigation">
+        <a href="#keliling">Klik ini untuk Keliling Segitiga</a>
+        <a href="#luas">Klik ini untuk Luas Segitiga</a>
+    </nav>
+    
+    <div id="box">
+        <div>
+            <div class="judul-LK-LS">
+                <h1 id="keliling">Keliling Segitiga</h1>
+            </div>
+        <div>
+        <img id="gambar" src="keliling-segitiga.jpg">
+        <p class="tulisan">Rumus Keliling Segitia : </p>
+        <p class="rumus">K = S1 + S2 + S3</p>
+        <p class="tulisan">Di Mana 
+            <br> K = Keliling 
+            <br> S1 = Sisi A 
+            <br> S2 = Sisi B 
+            <br> S3 = Sisi C</p>
+
+    
+        <p class="rumusdua" >Menghitung Keliling Segitiga</p>
+    
+        <label for="input-s1">Sisi 1:</label>
+            <input type="text" id="input-s1"><br>
+
+        <label for="input-s2">Sisi 2:</label>
+            <input type="text" id="input-s2"><br>
+
+        <label for="input-s3">Sisi 3:</label>
+            <input type="text" id="input-s3"><br>
+
+        <button id="buttom-hitung">Hitung</button>
+            <button id="button-reset">Reset</button>
+
+        <div id="buttom-output"></div>
+        <br>
+
+        <div class="judul-LK-LS">
+            <h1 id="luas">Luas Segitiga</h1>
+        </div>
+
+        <img id="gambar" src="luas-segitiga.png">
+
+        <label class="input-luas1" for="input-alas">Alas  :</label>
+            <input class="inputt-luas" type="text" id="input-alas"><br>
+
+        <label class="input-luas1" for="input-tinggi">Tinggi:</label>
+            <input  type="text" id="input-tinggi"><br>
+
+        <button id="button-hitung">Hitung Luas</button>
+            <button id="button-reset">Reset</button>
+
+        <div id="output"></div>
+    </div>    
+
+    <script class="text/javascript" src="./js/script2.js"></script>
+</body>
+</html>

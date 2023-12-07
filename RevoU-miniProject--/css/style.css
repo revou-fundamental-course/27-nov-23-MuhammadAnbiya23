@@ -1,0 +1,53 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.navbar {
+    background-color: Blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gambar {
+    height: 200px;
+    width: 200px;
+    padding-top: 20px;
+    display: block; 
+    margin:auto;
+}
+
+.tulisan {
+    padding-left: 10px;
+}
+
+.rumus {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.rumusdua {
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+
+}
+
+.input {
+    margin-left: 10px;
+    margin-top: 10px;
+}
